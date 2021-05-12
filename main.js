@@ -1,7 +1,6 @@
 // Declare global variables
 let emails = new Array; // This holds all the emails from selected cards.
 const emailList = new Array; // This holds all emails in the JSON array.
-const emoji = {'Cyber Team':'👩‍💻', 'Internet Policy Team':'🌍'};
 
 //create a card and populate it for a given object from an array. The object should have key/value pairs for 'name', 'bio' etc.
 createCard = (person) => {

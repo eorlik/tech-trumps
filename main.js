@@ -136,3 +136,8 @@ clearSelection = () => {
     else if (!protectedKeys.includes(e.keyCode))
      {searchbox.focus();}
  };
+
+//Zoom slider
+$("#slider").on("input",function () {
+            $('.card').css("font-size", $(this).val() + "%");
+    });

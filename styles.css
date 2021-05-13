@@ -166,11 +166,11 @@ ul li::before{
     background-color: var(--cardcolor1);
     overflow: hidden;
     box-shadow: gray 3px 4px 3px;
-    border-radius: 16px;
-    width: 240px;
-    height: 350px;
+    border-radius: 1em;
+    width: 15em;
+    height: 22em;
     transition: transform 40ms, background-color 40ms;
-    margin: 7px;
+    margin: 0.5em;
 }
 
 .card:after {
@@ -213,16 +213,16 @@ ul li::before{
 }
 
 #grade {
-    border-radius: 1rem;
-    height: 1rem;
-    min-width:1rem;
-    line-height: 1rem !important;
-    padding: 3px;
+    border-radius: 1em;
+    height: 1em;
+    min-width:1em;
+    line-height: 1em !important;
+    padding: 0.2em;
     position:absolute;
-    top: 4px;
-    right: 4px;
+    top: 0.25em;
+    right: 0.25em;
 
-    border: 1px solid var(--color1);
+    border: 0.1em solid var(--color1);
     color: var(--color1);
     text-align: center;
 
@@ -230,41 +230,41 @@ ul li::before{
 }
 
 #emoji {
-    font-size: 1.3rem;
+    font-size: 1.3em;
     float:left;
-    line-height: 1rem;
+    line-height: 1em;
 }
 
 #pronouns {
-    border-radius: 1rem;
-    height: 1rem;
-    min-width: 1rem;
-    line-height: 1rem !important;
-    padding: 3px;
+    border-radius: 1em;
+    height: 1em;
+    min-width: 1em;
+    line-height: 1em !important;
+    padding: 0.2em;
     position:absolute;
-    bottom: 4px;
-    right: 4px;
+    bottom: 0.25em;
+    right: 0.25em;
 
-    border: 1px solid var(--color1);
+    border: 0.1em solid var(--color1);
     color: var(--color1);
     text-align: center;
 
-    font: 0.75em Arial, sans-serif;
+    font: 75% Arial, sans-serif;
 }
 
 .tree {
-    border-radius: 1rem;
-    height:1rem;
-    width:1rem;
-    line-height: 1rem !important;
-    padding: 3px;
+    border-radius: 1em;
+    height:1em;
+    width:1em;
+    line-height: 1em !important;
+    padding: 0.2em;
     position: absolute;
-    bottom: 4px;
-    left: 4px;
-    border: 1px solid var(--color1);
+    bottom: 0.25em;
+    left: 0.25em;
+    border: 0.1em solid var(--color1);
     color: var(--color1);
     text-align: center;
-    font: 1.3em Arial, sans-serif;
+    font: 1em Arial, sans-serif;
     cursor:pointer;
 }
 

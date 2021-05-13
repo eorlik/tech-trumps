@@ -139,5 +139,5 @@ clearSelection = () => {
 
 //Zoom slider
 $("#slider").on("input",function () {
-            $('.card').css("font-size", 2*$(this).val() + "%");
+            $('.card').css("font-size", $(this).val() + "%");
     });

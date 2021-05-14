@@ -308,10 +308,6 @@ ul#foci > li {
     html {
         font-size:10px;
     }
-    .card {
-        width:168px;
-        height:245px;
-    }
 
     .card:before {
       border-bottom: 46px solid #bee6c6;

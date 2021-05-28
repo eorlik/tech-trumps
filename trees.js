@@ -66,10 +66,11 @@ var parent = rect.clone();
 parent.translate(0, -100);
 parent.attr({
     label: {
-        text:joint.util.breakText(family.parent, { width: 85 })
+        text:joint.util.breakText(family.parent, { width: 85 }),
+        fill: 'blue'
     },
     body: {
-        fill: 'blue'
+        fill: 'white'
     }
 });
 parent.addTo(graph);
@@ -93,6 +94,13 @@ if(family.siblings){
         siblingrect.addTo(graph);
 
         var link = new joint.shapes.standard.Link();
+        link.router('manhattan', {
+        startDirections: ['bottom'],
+        endDirections: ['top']
+        });
+        link.attr({
+          line: { stroke: 'black' }
+        })
         link.source(parent);
         link.target(siblingrect);
         link.addTo(graph);
@@ -118,12 +126,20 @@ for(let i = 0; i<family.children.length; i ++){
     childrect.addTo(graph);
 
     var link = new joint.shapes.standard.Link();
+    link.router('manhattan', {
+    startDirections: ['bottom'],
+    endDirections: ['top']
+});
     link.source(rect);
     link.target(childrect);
     link.addTo(graph);
     num++;
 };
 var link = new joint.shapes.standard.Link();
+link.router('manhattan', {
+startDirections: ['bottom'],
+endDirections: ['top']
+});
 link.source(parent);
 link.target(rect);
 link.addTo(graph);
